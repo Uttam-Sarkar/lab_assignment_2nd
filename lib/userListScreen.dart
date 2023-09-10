@@ -19,7 +19,9 @@ class UserListScreen extends StatelessWidget {
             leading: CircleAvatar(
               backgroundImage: FileImage(File(userList[index].imagePath)),
             ),
-            title: Text(userList[index].userName),
+            title: Text(userList[index].userName,
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
+          ),
             subtitle: Text(userList[index].userDialogue),
             onTap: () {
               Navigator.push(

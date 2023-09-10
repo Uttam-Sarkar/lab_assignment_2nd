@@ -33,6 +33,7 @@ class UserDataDetailScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
+                color: Colors.blue,
                 height: 300,
                 width: 300,
                 child: Image.file(File(imagePath)),
@@ -40,12 +41,12 @@ class UserDataDetailScreen extends StatelessWidget {
               SizedBox(height: 10),
               Text(
                 userName,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
               SizedBox(height: 50),
               Text(
                 userDialogue,
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 20),
               ),
               SizedBox(height: 10),
               ElevatedButton(onPressed: (){
